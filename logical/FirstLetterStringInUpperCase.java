@@ -4,24 +4,23 @@ public class FirstLetterStringInUpperCase {
 	
 	public static void main(String[] args) {
 		
-		String set="my name is ganesh";
+		String a="my name is gani";
 		String stor="";
 		
-		String []arr= set.split(" ");
+		String[] b=a.split(" ");
 		
-		for(int i=0;i<arr.length;i++) 
-		{
-			char c=arr[i].charAt(0);
+		for(int i=0;i<b.length;i++) {
 			
-			String c1=String.valueOf(c).toUpperCase();
+			char c=b[i].charAt(0);
 			
-			String sub =arr[i].substring(1);
+			String s=String.valueOf(c).toUpperCase();
 			
-			stor=stor +c1 +sub+" ";
+			String s1=b[i].substring(1);
 			
+			stor=stor+s+s1+" ";
 			
-		}
+			}
+		
 		System.out.println(stor);
-	}
-
+		}
 }

@@ -3,23 +3,28 @@ package com.xworkz.logical;
 public class SecondLargestNumberInArray {
 
 	 public static void main(String args[]){
-	      int temp, size;
-	      int array[] = {10, 20, 25, 63, 96, 57};
-	      size = array.length;
+		 
+		 int []a= {78,98,45,25,36};
+		 int temp;
+		 
+		 for(int i=0;i<a.length;i++) 
+		 {
+			 
+			 for(int j=i+1;j<a.length;j++) 
+			 {
+				if(a[j]<a[i]) 
+				{
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				} 
 
-	      for(int i = 0; i<size; i++ )
-	      {
-	         for(int j = i+1; j<size; j++)
-	         {
-
-	            if(array[i]>array[j])
-	            {
-	               temp = array[i];
-	               array[i] = array[j];
-	               array[j] = temp;
-	            }
-	         }
-	      }
-	      System.out.println("Third second largest number is:: "+array[size-2]);
-	   }
+			 }
+				System.out.println(a[i]);  
+		 }
+		 
+		 System.out.println("Second largest number : "+ a[a.length-2]);
+		 
+		 
+	     	   }
 }
