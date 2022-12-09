@@ -35,7 +35,7 @@ public class StringPalindrome {
 		
 		
 		
-		
+		sc.close();
 		
 	}
 

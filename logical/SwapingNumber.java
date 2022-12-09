@@ -20,7 +20,7 @@ public class SwapingNumber {
 		
 		System.out.println("b= "+a);
 		System.out.println("a = "+b);
-				
+		sc.close();		
 		
 	}
 

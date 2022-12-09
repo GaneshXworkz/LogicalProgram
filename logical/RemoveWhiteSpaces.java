@@ -19,9 +19,11 @@ public static void main(String[] args) {
 		if(g[i]==' ')
 		{
 			count+=1;
-			continue;
+			//continue;
+		}else {
+			System.out.print(g[i]);
 		}
-		System.out.print(g[i]);
+		
 	}
 	System.out.println();
 	System.out.println("Number Of Space : "+count);
